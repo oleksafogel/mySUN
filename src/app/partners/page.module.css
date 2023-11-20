@@ -1,0 +1,24 @@
+.partnersPage {
+  background-color: var(--darker-bg);
+}
+
+/* Call to Action style (bottom of the page) */
+
+.partnersCta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 50px;
+}
+
+.partnersCta h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .partnersCta {
+    padding: 0 50px 100px;
+  }
+}

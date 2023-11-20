@@ -1,0 +1,89 @@
+.keyFeaturesRows {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+.featureRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.imgCol {
+  max-width: 539px;
+}
+
+.imgCol img {
+  height: auto;
+  max-width: 80%;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  max-width: 582px;
+}
+
+.currentFeatures {
+  height: 70px;
+  width: 65px;
+}
+
+.nextReleases {
+  width: 220px;
+  height: auto;
+}
+
+.keyFeaturesRows h3 {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 1000px) {
+  .switch .imgCol {
+    order: 1;
+  }
+
+  .switch .textCol {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1380px) {
+  .imgCol, .textCol {
+    max-width: 45%;
+  }
+
+  .imgCol img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .imgCol img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .textCol img {
+    order: 2;
+  }
+
+  .textCol h3 {
+    order: 1;
+  }
+
+  .text {
+    order: 3;
+  }
+
+  .buttonBlock {
+    order: 4;
+  }
+}

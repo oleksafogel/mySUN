@@ -1,0 +1,133 @@
+.hero {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  max-width: 100vw;
+  padding: 85px 50px 60px 50px;
+}
+
+.heroTextCol, .heroImgCol {
+  flex: 1 1 auto;
+}
+
+.heroTextCol {
+  max-width: 485px;
+}
+
+.heroImgCol {
+  max-width: 707px;
+  height: 528px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 452px;
+}
+
+.iconLine {
+  left: -34px;
+  position: relative;
+}
+
+.heroDescription {
+  font-size: 14.5px;
+  margin-bottom: 50px;
+}
+
+.countdownBlock {
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 1194px) {
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+    padding: 140px 0 40px;
+    width: 100vw;
+  }
+
+  .heroTextCol, .heroImgCol {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .heroImgCol {
+    height: 100%;
+  }
+
+  .heroTextCol {
+    margin-bottom: 50px;
+    order: 1;
+  }
+
+  .textWrapper {
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 30px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .iconLine {
+    left: -10px;
+  }
+
+  .heroDescription {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 80vw;
+  }
+
+  .countdownBlock {
+    margin: 0;
+  }
+
+  .heroImgCol {
+    order: -1;
+  }
+
+  .heroImg {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .heroTextCol, .heroImgCol {
+    margin: 0;
+    max-width: 95%;
+  }
+
+  .textWrapper {
+    gap: 10px;
+    padding: 0;
+  }
+
+  .hero h1 {
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .heroDescription {
+    font-size: 16px;
+    margin: 20px 20px 40px;
+    max-width: 100%;
+  }
+
+  .heroImg {
+    max-width: 90%;
+  }
+
+  .buttonBlock {
+    padding-left: 10px;
+  }
+}

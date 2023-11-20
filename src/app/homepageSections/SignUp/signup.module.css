@@ -1,0 +1,106 @@
+.signup {
+  align-items: center;
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  padding: 114px 80px 60px 111px;
+}
+
+.imgCol {
+  max-width: 526px;
+}
+
+.signup img {
+  height: auto;
+  max-width: 100%;
+}
+
+.textCol {
+  max-width: 624px;
+  padding: 20px 0 20px 0;
+}
+
+.signup h2 {
+  font-size: 54px;
+  margin-bottom: 16px;
+}
+
+.underscore::after {
+  content: url(../../../images/signup-underscore.svg);
+  display: block;
+  height: 0;
+  left: 108px;
+  position: relative;
+  top: -40px;
+  z-index: -1;
+}
+
+.signup p {
+  color: #7a7a7a;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 170%;
+  margin-bottom: 30px;
+  max-width: 624px;
+}
+
+@media screen and (max-width: 1200px) {
+  .signup {
+    flex-direction: column;
+    gap: 0;
+    padding: 114px 0 20px 0;
+  }
+
+  .signup img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .signup h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .signup p {
+    margin: 40px 0;
+    text-align: justify;
+  }
+
+  .underscore::after {
+    top: -45px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .signUp {
+    display: block;
+    padding: 0;
+  }
+
+  .imgCol, .textCol {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .imgCol {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .signup img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .signup h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .underscore::after {
+    top: -25px;
+  }
+}

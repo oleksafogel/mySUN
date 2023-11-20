@@ -1,0 +1,84 @@
+.userCards {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    padding: 50px 80px 100px 60px;
+}
+
+.usersRow {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.usersImgCol{
+    align-items: center;
+    display: flex;
+    padding-left: 24px;
+}
+
+.usersCardCol {
+    max-width: 853px;
+}
+
+.scenario, .examples {
+    border-radius: 36px;
+    padding: 24px 24px 20px;
+}
+
+.scenario {
+    margin-bottom: 30px;
+}
+
+.examples {
+    background-color: #F2F2F2;
+}
+
+.usersCardCol h3 {
+    font-size: 21px;
+}
+
+.usersCardCol p {
+    color: #344054;
+    font-size: 15px;
+}
+
+.scenario p {
+    font-weight: 700;
+    line-height: 25.5px;
+}
+
+.example p {
+    font-weight: 400;
+    line-height: 170%;
+}
+
+@media screen and (min-width: 1325px) {
+    .switch .usersCardCol {
+        order: 1;
+    }
+    
+    .switch .usersImgCol{
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 1324px) {
+    .usersRow {
+        flex-direction: column;
+        max-width: 724px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .userCards .usersRow {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    .usersImgColimg {
+        width: 100%;
+    }
+}

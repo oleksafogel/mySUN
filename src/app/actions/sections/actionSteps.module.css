@@ -1,0 +1,109 @@
+.actionSteps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: center;
+    padding: 95px 70px 170px;
+}
+
+.topImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.underscore::after {
+    display: block;
+    content: url(/src/images/actions-page-underscore.svg);
+    height: 50px;
+    position: relative;
+    top: -45px;
+    width: 363px;
+    z-index: -1;
+}
+
+.actionsTextCol ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.actionsTextCol li {
+    color: #666;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 130%;
+    list-style-type: none;
+}
+
+.paperplaneImg::after {
+    display: block;
+    bottom: 30px;
+    content: url(../../../images/actions-page-paperplane-img.svg);
+    height: 0;
+    left: 260px;
+    position: relative;
+}
+
+.electricImg::after {
+    bottom: 100px;
+    content: url(../../../images/actions-page-electric-img.svg);
+    display: block;
+    height: 0;
+    left: 400px;
+    position: relative;
+}
+
+.fitImg::before {
+    bottom: 170px;
+    content: url(../../../images/actions-page-fit-img.svg);
+    display: block;
+    height: 0;
+    position: relative;
+    right: 300px;
+}
+
+@media screen and (max-width: 1115px) {
+    .actionSteps{
+        padding-top: 120px;
+    }
+
+    .fitImg::before {
+        content: url(../../../images/actions-page-fit-img-mobile.svg);
+        top: 50px;
+        right: -90px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .underscore::after {
+        height: 30px;
+        top: -25px;
+    }
+
+    /* .actionsTextCol ul {
+        padding-left: 20px;
+    } */
+
+    .paperplaneImg::after {
+        content: url(../../../images/actions-page-paperplane-img-mobile.svg);
+        left: 150px;
+        top: 5px
+    }
+
+    .electricImg::after {
+        bottom: 300px;
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .actionsTextCol h1 {
+        font-size: 40px;
+    }
+
+    .actionsTextCol li {
+        font-size: 15px;
+    }
+}

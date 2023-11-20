@@ -1,0 +1,19 @@
+.keyFeatures {
+  padding: 95px 78px 95px 132px;
+}
+
+.keyFeatures h2 {
+  font-size: 54px;
+  margin-bottom: 56px; 
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .keyFeatures {
+    padding: 24px 24px 50px;
+  }
+
+  .keyFeatures h2 {
+    font-size: 40px;
+  }
+}

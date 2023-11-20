@@ -1,0 +1,366 @@
+/* Desktop version */
+
+.timeline {
+  padding: 100px 0 400px;
+}
+
+.timelineIntro {
+  display: flex;
+  gap: 124px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-right: 78px;
+}
+
+.timeline h2 {
+  font-size: 54px;
+}
+
+.timelineIntroDescription {
+  color: #344054;
+  font-size: 17px;
+  line-height: 170%;
+  max-width: 775px;
+}
+
+/* Timeline */
+
+.timelineContainerDesktop {
+  background-color: var(--text-color);
+  height: 1px;
+  margin-top: 350px;
+}
+
+.timelineItemsDesktop {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 254px;
+  padding: 0 120px;
+}
+
+.itemWrapperDesktop {
+  flex: 0 1 370px;
+  position: relative;
+  top: -52px;
+}
+
+.itemStageDesktop img {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-height: 104px;
+  max-width: 104px;
+  width: 100%;
+}
+
+.itemStageDesktop img:hover {
+  background-color: #101828;
+  border: 1px solid #101828;
+  border-radius: 90px;
+  bottom: 3px;
+  box-shadow: 0px 2px 0 0 #101828;
+  position: relative;
+  z-index: 1;
+}
+
+.bottomBar {
+  background-color: var(--bar-border-color);
+  height: 73.5px;
+  margin: 0 auto;
+  width: 1px;
+}
+
+.bottomBarDot {
+  background-color: var(--bar-border-color);
+  border-radius: 5px;
+  height: 5px;
+  margin: 0 auto;
+  position: relative;
+  width: 5px;
+}
+
+.topBar {
+  background-color: var(--bar-border-color);
+  height: 73.5px;
+  margin: 0 auto;
+  position: relative;
+  top: -175px;
+  width: 1px;
+}
+
+.topBarDot {
+  background-color: var(--bar-border-color);
+  border-radius: 5px;
+  height: 5px;
+  margin: 0 auto;
+  position: relative;
+  top: -253px;
+  width: 5px;
+}
+
+.contentDesktopBottom {
+  margin-top: 24px;
+}
+
+.contentDesktopTop {
+  margin-bottom: 24px;
+  position: relative;
+  top: -440px;
+}
+
+/* Shared elements -> Desktop */
+
+.date {
+  background-color: #f0f9fd;
+  border-radius: 356px;
+  color: #007aff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0 auto;
+  padding: 6px 16px;
+  text-align: center;
+  width: fit-content;
+}
+
+.timeline h3 {
+  font-size: 24px;
+  margin: 4px 0 6px;
+  text-align: center;
+}
+
+.content {
+  color: #475467;
+  font-size: 12px;
+  line-height: 170%;
+  min-width: 282px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width:1439px) {
+  .timelineContainerTabMob {
+    display: none;
+  }
+}
+
+/* Tablet and Mobile versions: */
+  
+/* Intro -> Tablet */
+  
+@media (max-width: 1438px) {
+  .timelineContainerDesktop {
+    display: none;
+  }
+
+  .timeline {
+    padding: 30px 0;
+  }
+
+  .timelineIntro {
+    gap: 10px;
+    flex-direction: column;
+    padding: 0 20px 60px;
+    width: 70%;
+  }
+
+  .timelineIntro h2 {
+    text-align: center;
+  }
+  
+  .timelineIntroDescription {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  /* Timeline -> Tablet */
+
+  .timelineContainerTabMob {
+    margin: 0 auto;
+    max-width: 1439px;
+  }
+
+  .timelineItemsTabMob {
+    margin: 30px auto;
+    position: relative;
+    transition: all 0.3s;
+    width: 90%;
+  }
+  
+  .timelineItemsTabMob img{
+    max-width: 100%;
+  }
+
+  .timelineItemsTabMob, .timelineItemsTabMob *, .timelineItemsTabMob *::before, .timelineItemsTabMob *::after {
+    box-sizing: border-box;
+  }
+  
+  .timelineItemsTabMob::before {
+    background-color: var(--bar-border-color);
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 2px;
+  }
+  
+  .itemStageTabMob {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .iconTabMob {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    top: -1px;
+    width: 80px;
+    z-index: 1;
+  }
+  
+  .iconTabMob img {
+    width: 100%;
+  }
+  
+  .contentTabMob {
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s;
+    width: 48.1%;
+  }
+  
+  .contentTabMob::before {
+    background-color: var(--bar-border-color);
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    right: 15px;
+    top: 38px;
+    width: 80px;
+  }
+  
+  .contentTabMob::after {
+    background-color: var(--bar-border-color);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 6px;
+    position: absolute;
+    right: 89px;
+    top: 36px;
+    width: 6px;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .right::before {
+    left: 15px;
+    right: inherit;
+  }
+  
+  .right::after {
+    left: 89px;
+    right: inherit;
+  }
+  
+  .itemStageTabMob::after, .itemStageTabMob::before {
+    display: block;
+    clear: both;
+    content: "";
+    width: 100%;
+  }
+}
+
+/* Intro -> Mobile */
+
+@media (max-width: 768px) {
+  .timeline {
+    padding: 10px;
+  }
+
+  .timelineIntro {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 60px;
+    padding: 0 0 20px;
+    width: 75%;
+  }
+  
+  .timelineIntro h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .timelineIntroDescription {
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  /* Timeline -> Mobile */
+
+  .timelineContainerTabMo {
+    padding-left: 20px;
+  }
+  
+  .timelineItemsTabMob {
+    margin: 30px;
+    padding: 0;
+  }
+  
+  .timelineItemsTabMob::before {
+    left: 0;
+  }
+  
+  .iconTabMob {
+    left: 0;
+  }
+  
+  .contentTabMob {
+    float: right;
+    padding-left: 30px;
+    padding-top: 24px;
+    width: 90%;
+  }
+  
+  .contentTabMob::before {
+    left: -26px;
+    right: inherit;
+  }
+  
+  .contentTabMob::after {
+    left: 50px;
+    right: inherit;
+  }
+  
+  .right::before {
+    left: -26px;
+    right: inherit;
+  }
+  
+  .right::after {
+    left: 50px;
+    right: inherit;
+  }
+
+  /* Shared elements -> Tablet and Mobile */
+
+  .date {
+    font-size: 12px;
+  }
+
+  .timeline h3 {
+    font-size: 16px;
+  }
+
+  .content {
+    min-width: 180px;
+  }
+}

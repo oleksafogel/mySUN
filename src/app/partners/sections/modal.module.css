@@ -1,0 +1,76 @@
+.modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1002;
+}
+
+.modalContent {
+  align-items: center;
+  background-repeat: no-repeat;
+  display: flex;
+  border-radius: 36px;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 90vh;
+  max-width: 682px;
+  padding: 115px 115px 30px;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.modalContent::-webkit-scrollbar {
+  width: 0;
+}
+
+.modalLogo {
+  align-self: flex-start;
+  height: 130px;
+  width: 302px; 
+}
+
+.modalContent p {
+  color: #344054;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 170%;
+  margin-bottom: 30px;
+}
+
+.close {
+  color: #333;
+  font-size: 15px;
+  text-align: center;
+}
+
+.close:hover {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .modalContent {
+    background-size: 50px 50px;
+    padding: 50px;
+    width: 90vw;
+  }
+
+  .modalLogo {
+    width: 50%;
+  }
+
+  .modalContent p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .wzmhBgMob {
+    background-position: top 25px right 100px !important;
+    background-size: 50px;
+  }
+}

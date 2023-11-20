@@ -1,0 +1,112 @@
+.form {
+  width: 100%;
+}
+
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.inputRow {
+  display: flex;
+} 
+
+.emailRow {
+  flex-direction: column;
+}
+
+.gapRow {
+  display: flex;
+  gap: 24px;
+}
+
+.inputCol {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form label {
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #f79009;
+}
+
+.form input[type="email"], .form input[type="text"], .form select {
+  border: 1px solid #101828;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 52px;
+  line-height: 160%;
+  padding: 4px 20px;
+  width: 100%;
+}
+
+.form input::placeholder {
+  color: #98a2b3;
+}
+
+.form select {
+  appearance: none;
+  background: url(../images/signup-select-icon.svg) 95% / 8% no-repeat;
+  background-color: white;
+  color: #98a2b3;;
+}
+
+.form select:focus {
+  color: var(--text-color);
+}
+
+.form select option {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.form select option:checked {
+  color: var(--accent-color);
+}
+
+.form input[type="submit"] {
+  display: block;
+  max-width: 242px;
+}
+
+.formMessages {
+  margin-top: 30px;
+}
+
+.success {
+  color: #7a7a7a;
+}
+
+.error {
+  color: red;
+}
+
+@media screen and (max-width: 1365px) {
+  .form input[type="submit"] {
+    margin: 0 auto;
+  }
+
+  .formMessages div {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gapRow {
+    flex-direction: column;
+  }
+
+  .inputCol {
+    width: 100%;
+  }
+}

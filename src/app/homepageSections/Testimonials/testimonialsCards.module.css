@@ -1,0 +1,86 @@
+.testimonialsCards {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 2px solid #000000;
+  border-radius: 36px;
+  display: flex;
+  flex: 0 1 370px;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+  max-width: 370px;
+  padding-bottom: 24px;
+  position: relative;
+  transition: 0.1s ease-in;
+}
+
+.card:hover {
+  transform: rotate(5deg);
+}
+
+.card img {
+  display: block;
+  height: 82px;
+  margin: 0 auto;
+  top: -39px;
+  position: relative;
+  width: 82px;
+}
+
+.card p {
+  color: #344054;
+  line-height: 26px;
+  margin: 13px 24px 0;
+  position: relative;
+  text-align: left;
+  top: -39px;
+}
+
+.cardAuthor {
+  align-self: self-end;
+  bottom: 24px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.cardName {
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.cardRole {
+  color: #667085;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1148px) and (max-width: 1361px) {
+  .card {
+    height: 354px;
+  }
+}
+
+@media screen and (max-width: 1147px) {
+  .testimonialsCards {
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .card {
+    flex: auto;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}

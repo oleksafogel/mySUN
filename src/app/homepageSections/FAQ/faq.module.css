@@ -1,0 +1,55 @@
+.faq {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 79px 78px 80px 285px;
+}
+
+.faqTitle {
+  font-size: 54px;
+  margin-bottom: 24px;
+}
+
+.faqImg {
+  align-self: flex-start;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1164px) {
+  .faq {
+    padding: 30px;
+  }
+
+  .faqTitle {
+    line-height: 112px;
+    text-align: center;
+  }
+
+  .faqTitle::after {
+    background-image: url(../../../images/faq-img.svg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    content: "";
+    display: block;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .faqImg {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .faqTitle {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .faqTitle::after {
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+  }
+}

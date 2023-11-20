@@ -1,0 +1,64 @@
+.partnersCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    margin: 0 auto 50px;
+    max-width: 1200px;
+    padding: 46px auto;
+}
+
+.partnerCard {
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.partnerCard img {
+    margin: 0 auto;
+}
+
+.partnerCard p {
+    color: #344054;
+    max-width: 440px;
+    font-size: 15px;
+    line-height: 170%;
+    font-weight: 700;
+    margin: 0;
+}
+
+.partnerCard a {
+    color: #333;
+    font-size: 15px;
+    line-height: 170%;
+    padding-bottom: 20px;
+    text-align: end;
+}
+
+.partnerCard a:hover {
+    font-weight: 700;
+}
+
+.color {
+    background-color: #FFCD00;
+    padding: 53px 38px 10px;
+}
+
+.bw {
+    border: 1px solid black;
+    padding: 52px 37px 9px;
+}
+
+@media screen and (max-width: 1200px) {
+    .partnersCards {
+        flex-wrap: wrap;
+        padding: 46px 30px;
+    }
+}

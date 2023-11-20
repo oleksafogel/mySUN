@@ -1,0 +1,36 @@
+.privacyPolicy, .cookiePolicy {
+    padding: 50px 120px;
+}
+
+.privacyPolicy, .cookiePolicy h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.privacyPolicy, .cookiePolicy h3 {
+    font-size: 24px;
+}
+
+.privacyPolicy, .cookiePolicy p {
+    margin-bottom: 20px;
+}
+
+.cookiePolicy .cky-banner-element:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1082px) {
+    .privacyPolicy, .cookiePolicy {
+        padding: 150px 50px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .privacyPolicy, .cookiePolicy {
+        padding: 150px 20px 20px;
+    }
+
+    .privacyPolicy h1, .cookiePolicy h1 {
+        font-size: 40px;
+    }
+}
