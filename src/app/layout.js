@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
   return (
       <html lang="en" className={`${baloo.variable} ${poppins.variable} ${overpass.variable}`}>
         <head>
+          <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/b71570a81d287ae57a0d3bc5/script.js"></script>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}/>
         </head>
         <body>
