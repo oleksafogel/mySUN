@@ -8,10 +8,6 @@ import Footer from './layoutComponents/footer';
 import Header from './layoutComponents/header';
 
 export const metadata = {
-  metadataBase: new URL('https://mysunapp.com'),
-  alternates: {
-      canonical: '/'
-  },
   title: 'mySUN • APP that helps reduce our Nature’s Footprint',
   description: 'Transform habits, reduce ecological footprint: mySUN app gamifies eco-conscious choices, making living a sustainable life fun and easy. Go green!',
 }
