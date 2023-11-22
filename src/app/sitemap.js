@@ -7,19 +7,19 @@ export default function sitemap() {
         priority: 1,
       },
       {
-        url: 'https://mysunapp.com/users/',
+        url: 'https://mysunapp.com/users',
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.9,
       },
       {
-        url: 'https://mysunapp.com/partners/',
+        url: 'https://mysunapp.com/partners',
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.9,
       },
       {
-        url: 'https://mysunapp.com/actions/',
+        url: 'https://mysunapp.com/actions',
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.9,
