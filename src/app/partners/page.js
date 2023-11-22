@@ -5,10 +5,6 @@ import PartnersCards from "./sections/partnersCards";
 import Button from "/src/universalComponents/button";
 
 export const metadata = {
-    metadataBase: new URL('https://mysunapp.com'),
-    alternates: {
-        canonical: 'partners/'
-    },
     title: 'Our Partners • mySUN app',
     description: "Discover our valued partners in the sustainability journey. Together, we're making a positive impact on the environment with mySUN app.",
 }
